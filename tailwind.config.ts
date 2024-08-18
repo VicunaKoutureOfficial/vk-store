@@ -58,11 +58,23 @@ const config = {
                 '2.5s': '2.5s',
                 '3s': '3s',
             }
+
+
         },
+        backgroundSize: {
+            "size-200": "200% 200%",
+        },
+        backgroundPosition: {
+            "pos-0": "0% 0%",
+            "pos-100": "100% 100%",
+        },
+
     },
     plugins: [
         require('tailwindcss-animate'),
         require('tailwind-scrollbar'),],
 } satisfies Config
+
+
 
 export default config
