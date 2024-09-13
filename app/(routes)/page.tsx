@@ -28,7 +28,7 @@ const HomePage = async () => {
       <ProductList title="Featured Products" items={products} />
       <CreativeHubs />
       <Fashion />
-      <Faqsection />
+      {/* <Faqsection /> */}
       <Custompics />
       {/* <Billboard data={billboard} /> */}
     </main>

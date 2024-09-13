@@ -32,13 +32,13 @@ export function Hero() {
           alt="Picture of the author"
           className="flex flex-col -z-10 relative object-cover"
         /> */}
-      <Suspense fallback={<p>Loading video...</p>}>
-        <video preload="none" className=" w-auto min-w-full min-h-full max-w-none" autoPlay loop muted>
-          <source src="vkvid.webm" type="video/webm" />
 
-          Your browser does not support the video tag.
-        </video>
-      </Suspense>
+      <video preload="none" className=" w-auto min-w-full min-h-full max-w-none" autoPlay loop muted>
+        <source src="vkvid.webm" type="video/webm" />
+
+        Your browser does not support the video tag.
+      </video>
+
       {/* <motion.div
           className="flex items-center justify-center w-full "
           variants={FADE_UP_ANIMATION_VARIANTS}

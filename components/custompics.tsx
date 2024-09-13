@@ -5,12 +5,11 @@ type Props = {}
 
 export default function custompics({ }: Props) {
     return (
-        <div className="flex flex-row text-white md:p-10 p-3 w-full relative h-[100vh] ">
-            <Image
+        <div className="flex flex-row text-white w-full h-full relative">
+            <img
                 src="/merchpic.jpg"
-                fill={true}
                 alt="Picture of the author"
-                className="flex flex-col -z-10 relative object-cover"
+                className="object-cover p-0 m-0 w-full h-full"
             />
             {/* <div className="w-full flex flex-col items-start justify-end p-10 text-left">
                 <motion.div

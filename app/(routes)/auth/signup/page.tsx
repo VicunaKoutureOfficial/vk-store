@@ -6,6 +6,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import Button from "@/components/ui/button";
+import Image from "next/image";
 
 import {
   Form,
@@ -39,15 +40,16 @@ const Signup = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-[30%] flex flex-col justify-center items-center border-2 border-[#da9cf067]">
-        <div className="p-10">
-          <video preload="none" width="360" height="240" className="rounded-3xl border-2 p-2 border-black" autoPlay loop muted>
+    <div className="min-h-screen flex items-center justify-center md:p-10">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-full md:w-full md:max-w-[30%] flex flex-col justify-center items-center border-2 border-[#da9cf067]">
+        <div className="p-10 bg-[#76287E] rounded-md mb-5">
+          {/* <video preload="none" width="360" height="240" className="rounded-3xl border-2 p-2 border-black" autoPlay loop muted>
             <source src="vklogo.webm" type="video/webm" />
 
             Your browser does not support the video tag.
-          </video>
-          {/* <Image src="/vk.png" height={100} width={100}></Image> */}
+          </video> */}
+
+          <Image src="/vk.png" height={200} width={200} alt="logo"></Image>
         </div>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 w-full">
