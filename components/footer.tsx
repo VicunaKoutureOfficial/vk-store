@@ -11,6 +11,11 @@ import {
   Youtube,
   YoutubeIcon,
 } from "lucide-react";
+
+import { IoLogoYoutube } from "react-icons/io5";
+import { CiInstagram } from "react-icons/ci";
+import { FaFacebook, FaLink } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
 const Footer = () => {
@@ -111,25 +116,29 @@ const Footer = () => {
               href="/"
               className="bg-white text-black p-2 rounded-lg hover:bg-blue-600 transition-all duration-150 ease-linear hover:text-white"
             >
-              <FacebookIcon />
+              {/* <FacebookIcon /> */}
+              < FaFacebook className="text-2xl" />
             </Link>
             <Link
               href="/"
               className="bg-white text-black p-2 rounded-lg hover:bg-gradient-to-b hover:from-purple-500 hover:via-pink-500 hover:to-orange-500 transition-all duration-150 ease-linear hover:text-white"
             >
               <InstagramIcon />
+              {/* <CiInstagram className="text-2xl font-black" /> */}
             </Link>
             <Link
               href="/"
               className="bg-white text-black p-2 rounded-lg hover:bg-red-600 transition-all duration-150 ease-linear hover:text-white"
             >
-              <YoutubeIcon />
+              {/* <YoutubeIcon /> */}
+              <IoLogoYoutube className="text-2xl" />
             </Link>
             <Link
               href="/"
               className="bg-white text-black p-2 rounded-lg hover:bg-sky-400 transition-all duration-150 ease-linear hover:text-white"
             >
-              <LinkedinIcon />
+              {/* <LinkedinIcon />*/}
+              < FaLinkedin className="text-2xl" />
             </Link>
           </div>
         </div>
