@@ -49,7 +49,7 @@ const Navbar = async () => {
             Your browser does not support the video tag.
           </video> */}
           <div className="hidden md:block"><img src="vk.png" width={150} /></div>
-          <div className="block md:hidden"><img src="vk.png" width={70} /></div>
+          <div className="block md:hidden"><img src="vk.png" width={50} /></div>
 
         </div>
 
