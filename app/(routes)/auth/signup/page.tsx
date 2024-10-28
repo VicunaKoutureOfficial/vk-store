@@ -122,14 +122,14 @@ const Signup = () => {
         >
           <p>Continue with Google</p>
         </button>
-        <button
+        {/* <button
           className="relative group/btn flex space-x-2 items-center justify-center px-4 w-full text-black rounded-[0.5rem] font-medium shadow-input bg-size-200 bg-pos-0 dark:bg-pos-0 hover:bg-pos-100 dark:hover:bg-pos-100 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)] bg-gradient-to-r from-blue-100 via-cyan-400 to-cyan-100 dark:bg-gradient-to-r dark:from-zinc-800 dark:via-red-500 dark:to-blue-500 transition-all duration-300 ease-in-out h-[4h] p-4 text-xl mt-4"
           onClick={() => {
             OnClick("twitter");
           }}
         >
           <p>Continue with Twitter</p>
-        </button>
+        </button> */}
       </div>
     </div>
   );
