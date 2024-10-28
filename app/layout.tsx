@@ -16,8 +16,8 @@ import CreativeHubs from "@/components/creative-hubs";
 const font = Urbanist({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Store",
-  description: "Store - The place for all your purchases.",
+  title: "Vicuna Kouture",
+  description: "Vicuna Kouture - The place for all your purchases.",
 };
 
 export default function RootLayout({
