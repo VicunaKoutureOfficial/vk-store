@@ -30,7 +30,8 @@ const NavbarActions = ({
 
   return (
     <div className="flex items-center md:gap-x-4 ">
-      {{userName && (
+      <div>
+      {userName && (
         <div className=" flex space-x-4">
           <form className="cursor-pointer" action={handleSignOut}>
             <Button
@@ -44,7 +45,8 @@ const NavbarActions = ({
             {userName}
           </Button>
         </div>
-      )} }
+      )}
+      </div>
       <Link href={"/auth/login"} className=" text-sm font-medium text-white ">
         <Button className="flex items-center rounded-full bg-[#00000000] px-1 md:px-4 py-2 border-2 border-transparent hover:border-2 hover:border-black hover:scale-110 ease-in-out transition-all duration-400 hover:bg-pink-300 text-white font-extrabold hover:text-black">
           <UserRound className=" scale-75 md:scale-125" />
