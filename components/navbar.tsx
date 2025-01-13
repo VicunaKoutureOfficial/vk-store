@@ -34,10 +34,10 @@ const Navbar = async () => {
           </Link> */}
           <div>
             {/* <NavigationIcon /> */}
-            <RxHamburgerMenu className="text-white pl-[1rem] md:pl-0 text-[3rem] md:text-[3rem]" />
+            
 
           </div>
-          {/* <NavDrawer /> */}
+          <NavDrawer userName={session?.user?.name}/>
 
         </div>
 
@@ -48,8 +48,10 @@ const Navbar = async () => {
 
             Your browser does not support the video tag.
           </video> */}
+          <Link href={"/"}>
           <div className="hidden md:block"><img src="vk.png" width={150} /></div>
           <div className="block md:hidden"><img src="vk.png" width={50} /></div>
+          </Link>
 
         </div>
 

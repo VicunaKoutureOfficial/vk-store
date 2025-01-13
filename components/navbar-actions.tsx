@@ -30,19 +30,19 @@ const NavbarActions = ({
 
   return (
     <div className="flex items-center md:gap-x-4 ">
-      <div>
+      <div className="hidden md:block">
       {userName && (
         <div className=" flex space-x-4">
           <form className="cursor-pointer" action={handleSignOut}>
             <Button
-              className="flex items-center rounded-full bg-black px-4 py-2"
+              className="flex items-center rounded-full bg-[#572a43] p-1 md:p-2 text-xs md:text-sm"
               type="submit"
             >
               Sign out
             </Button>
           </form>
-          <Button className="flex items-center rounded-full bg-black px-4 py-2">
-            {userName}
+          <Button className="flex items-center rounded-full bg-[#572a43] p-1 md:p-2 text-xs md:text-sm">
+            Prem Kumar Singh
           </Button>
         </div>
       )}
@@ -52,11 +52,11 @@ const NavbarActions = ({
           <UserRound className=" scale-75 md:scale-125" />
         </Button>
       </Link>
-      <Link href={"/auth/signup"} className=" text-sm font-medium text-white">
+      {/* <Link href={"/auth/signup"} className=" text-sm font-medium text-white">
         <Button className="flex items-center rounded-full bg-[#00000000] px-1 md:px-4 border-2 border-transparenthover:border-2 hover:border-black hover:scale-110 ease-in-out transition-all duration-400 hover:bg-pink-300 text-white hover:text-black">
           <Heart className="scale-75 md:scale-125" />
         </Button>
-      </Link>
+      </Link> */}
 
       <Button
         onClick={() => router.push("/cart")}
