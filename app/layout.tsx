@@ -12,6 +12,9 @@ import Faqsection from "@/components/faqsection";
 import { Fashion } from "@/components/fashion";
 import Marquee from "@/components/marquee";
 import CreativeHubs from "@/components/creative-hubs";
+import {
+  ClerkProvider,
+} from '@clerk/nextjs'
 
 const font = Urbanist({ subsets: ["latin"] });
 
@@ -26,6 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    <ClerkProvider>
     <html lang="en" className=" !scroll-smooth scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-[#76287E] scrollbar-track-[#000000]">
       <body className={font.className}>
         <ToastProvider />
@@ -38,5 +42,6 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
+    </ClerkProvider>
   );
 }

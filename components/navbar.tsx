@@ -5,7 +5,7 @@ import MainNav from "@/components/main-nav";
 import Container from "@/components/ui/container";
 import NavbarActions from "@/components/navbar-actions";
 import getCategories from "@/actions/get-categories";
-import { auth } from "@/auth";
+// import { auth } from "@/auth";
 import Image from "next/image";
 import { PlaceholdersAndVanishInput } from "./ui/placeholders-and-vanish-input";
 import { MultiDirectionSlide } from "./ui/slide-text";
@@ -14,10 +14,13 @@ import { NavDrawer } from "./navdrawer";
 import * as React from "react"
 import { NavigationIcon } from "lucide-react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { auth, currentUser } from '@clerk/nextjs/server'
 
 const Navbar = async () => {
   const categories = await getCategories();
-  const session = await auth();
+  // const session = await auth();
+  const { userId } = await auth();
+  const user = await currentUser();
 
   return (
     <div className="shadow-sm bg-[#76287E] w-full">
@@ -37,7 +40,7 @@ const Navbar = async () => {
             
 
           </div>
-          <NavDrawer userName={session?.user?.name}/>
+          <NavDrawer userName={user?.firstName}/>
 
         </div>
 
@@ -57,8 +60,10 @@ const Navbar = async () => {
 
         {/* <MainNav data={categories} /> */}
         <div className="w-full flex items-center justify-end md:pr-0 pr-2">
-          <NavbarActions userName={session?.user?.name} />
+          <NavbarActions userName={user?.firstName} />
         </div>
+        
+        
 
       </div>
     </div >
