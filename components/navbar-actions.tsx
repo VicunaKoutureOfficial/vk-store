@@ -42,7 +42,7 @@ const NavbarActions = ({
             </Button>
           </form>
           <Button className="flex items-center rounded-full bg-[#572a43] p-1 md:p-2 text-xs md:text-sm">
-            Prem Kumar Singh
+            {userName}
           </Button>
         </div>
       )}
