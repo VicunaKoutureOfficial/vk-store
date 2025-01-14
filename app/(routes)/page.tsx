@@ -26,10 +26,10 @@ const HomePage = async () => {
       <Marquee />
       <Hero />
       <ProductList title="Featured Products" items={products} />
-      <CreativeHubs />
-      <Fashion />
-      {/* <Faqsection /> */}
       <Custompics />
+      <Faqsection />
+      <CreativeHubs />
+      {/* <Fashion /> */}
       {/* <Billboard data={billboard} /> */}
     </main>
   );

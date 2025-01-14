@@ -9,7 +9,7 @@ type Props = {};
 
 export default function faqsection({ }: Props) {
   return (
-    <div className="w-full md:p-20 p-5 flex md:flex-row flex-col gap-10">
+    <div className="w-full md:py-20 md:px-5 p-5 flex md:flex-row flex-col gap-10">
       <div className="md:max-w-[70%] w-full flex-col md:flex-row flex gap-1">
         {/* <AccordionFaq /> */}
         <div className="flex justify-center p-2 bg-[#76287E] items-center rounded-lg my-auto pt-5 px-3">
@@ -22,7 +22,7 @@ export default function faqsection({ }: Props) {
           <InstagramEmbed url="https://www.instagram.com/reel/C3z1Q_UrGoo/?igsh=aXI2cXhidm11eHpo" />
         </div>
       </div>
-      <div className="md:min-w-[30%] w-full gap-5 flex md:flex-col flex-row">
+      <div className="md:min-w-[25%] w-full gap-5 flex md:flex-col flex-row">
         <div className="h-[50%] w-full border border-black p-4 flex flex-col gap-1">
           <p className="md:text-xl text-lg font-bold">NEWSLETTER</p>
           <p className="md:text-lg text-[10pt]">STAY UPDATED WITH THE LATEST TRENDS</p>
@@ -37,7 +37,6 @@ export default function faqsection({ }: Props) {
         <div className="h-[50%] w-full bg-[#76287E] p-3">
           <div className="bg-transparent border border-white h-full w-full p-2 flex items-center justify-center text-white font-black">
             <RotateText />
-            {/* <RotateText /> */}
           </div>
         </div>
       </div>

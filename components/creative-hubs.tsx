@@ -57,7 +57,7 @@ export default function creativeHubs({ }: Props) {
       <div className="flex md:flex-row flex-col items-center p-1 pt-[15%] w-full z-[200]">
         <div className="relative md:w-[1400px] w-[300px] md:h-[500px] h-[200px] overflow-hidden">
           <Image
-            src="/create1.png"
+            src="/designmarketplace.jpg"
             alt="Picture of the author"
             className="rounded-sm"
             object-fit="cover"
@@ -73,7 +73,7 @@ export default function creativeHubs({ }: Props) {
           </div>
           <div className="pt-[15%] flex md:justify-start justify-center">
             <button className="bg-[#76287E] p-3 md:text-2xl text-xl flex flex-row gap-4 items-center justify-center hover:gap-10 transition-all duration-300 ease-out shadow-2xl shadow-fuchsia-700 font-bold">
-              DESIGN HUB
+              Coming Soon ...
               <img src="arrow.svg" className="scale-[65%] md:scale-100" />
             </button>
           </div>
@@ -89,14 +89,14 @@ export default function creativeHubs({ }: Props) {
           </div>
           <div className="pt-[15%]">
             <button className="bg-[#76287E] md:p-3 p-2 md:text-2xl text-lg flex flex-row gap-4 items-center justify-center hover:gap-10 transition-all duration-300 ease-out shadow-2xl shadow-fuchsia-700 font-bold">
-              DESIGNER STUDIO
+              Coming Soon ...
               <img src="arrow.svg" className="scale-[65%] md:scale-100" />
             </button>
           </div>
         </div>
         <div className="relative md:w-[1400px] w-[300px] md:h-[500px] h-[200px] overflow-hidden">
           <Image
-            src="/create2.png"
+            src="/designyourself.jpg"
             alt="Picture of the author"
             className="rounded-sm"
             object-fit="cover"
