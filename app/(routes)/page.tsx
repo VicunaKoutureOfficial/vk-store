@@ -12,6 +12,9 @@ import CreativeHubs from "@/components/creative-hubs";
 import { Fashion } from "@/components/fashion";
 import Faqsection from "@/components/faqsection";
 import Custompics from "@/components/custompics";
+import RamMerch from "@/components/ram-merch";
+import CskMerch from "@/components/csk-merch";
+import PokemonMerch from "@/components/pokemon-merch";
 
 export const revalidate = 0;
 
@@ -26,6 +29,9 @@ const HomePage = async () => {
       <Marquee />
       <Hero />
       <ProductList title="Featured Products" items={products} />
+      <RamMerch/>
+      <CskMerch/>
+      <PokemonMerch/>
       <Custompics />
       <Faqsection />
       <CreativeHubs />
